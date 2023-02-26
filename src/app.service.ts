@@ -1,22 +1,12 @@
 import {Injectable} from '@nestjs/common';
 
-type MethodType = {
-  id: string;
-  title: string;
-  desc: string;
-};
-
-const methods: MethodType[] = [
-  {
-      id: '1',
-      title: 'Метод 1',
-      desc: 'Это супер-пупер метод, наверное'
-  }
-];
+import {getMethods} from './db';
 
 @Injectable()
 export class AppService {
-  getHello() {
+  async getHello() {
+    const methods = await getMethods();
+    console.log(methods);
     return methods;
   }
 }
