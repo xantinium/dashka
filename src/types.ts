@@ -1,6 +1,6 @@
 type Task = {
-    task: string;
-    hints: string[];
+  task: string;
+  hints: string[];
 }
 
 type Theme = {
@@ -19,10 +19,5 @@ export type MethodType = {
   title: string;
   themes: Theme[];
 };
-
-export interface QueryParams {
-  theme: string;
-  id: string;
-}
 
 export type MethodItemType = Omit<MethodType, 'themes'>;
