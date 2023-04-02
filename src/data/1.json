@@ -25,7 +25,7 @@
                     "hints": ["Подстановка MATH{12}"]
                 },
                 {
-                    "task": "Решите систему уравнений MATH{13}",
+                    "task": "Решите систему уравнений MATH{$\\left\\{ \\begin{align} & \\sqrt{\\frac{y}{x}}-2\\sqrt{\\frac{x}{y}}=1 \\\\ & \\sqrt{5x+y}+\\sqrt{5x-y}=4 \\\\ \\end{align} \\right.$}",
                     "hints": ["Подстановка MATH{14}"]
                 },
                 {
