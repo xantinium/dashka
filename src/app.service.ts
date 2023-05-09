@@ -2,9 +2,11 @@ import {Injectable} from '@nestjs/common';
 
 import {MethodType, MethodItemType} from './types';
 import * as method_1 from './data/1.json';
+import * as method_2 from './data/2.json';
 
 const METHODS: MethodType[] = [
-  method_1
+  method_1,
+  method_2,
 ];
 
 @Injectable()
