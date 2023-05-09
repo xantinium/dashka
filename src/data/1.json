@@ -48,7 +48,7 @@
                     {"type":"text", "content": "Корнями уравнения"},
                     {"type":"math", "content": "${{\\left( u\\left( x \\right) \\right)}^{f\\left( x \\right)}}={{\\left( u\\left( x \\right) \\right)}^{g\\left( x \\right)}}$"},
                     {"type":"text", "content": "считаются только решения смешанной системы"},
-                    {"type":"math", "content": "$\\begin{cases}\\u(x)>0,\\\\u(x)\\neq1,\\\\f(x)=g(x)\\end{cases}$"},
+                    {"type":"math", "content": "$\\begin{cases}u(x)>0,\\\\u(x)\\ne1,\\\\f(x)=g(x)\\end{cases}$"},
                     {"type":"text", "content": "и те значения MATH{$x$}, для которых MATH{$u\\left( x \\right)=1$}, если при этих значениях определены MATH{$f\\left( x \\right)$} и MATH{$g\\left( x \\right)$}. Функция вида MATH{${{\\left( u\\left( x \\right) \\right)}^{f\\left( x \\right)}}$} определена только при MATH{$u\\left( x \\right)>0$}, поэтому те значения MATH{$x$},которые формально удовлетворяю равенству:"},
                     {"type":"math", "content": "${{\\left( u\\left( x \\right) \\right)}^{f\\left( x \\right)}}={{\\left( u\\left( x \\right) \\right)}^{g\\left( x \\right)}}$,"},
                     {"type":"text", "content": "но при которых MATH{$u\\left( x \\right)\\le 0$},не принято считать корнями этого уравнения."},
