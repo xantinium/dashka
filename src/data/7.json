@@ -1,0 +1,26 @@
+{
+    "id": "7",
+    "title": "Приём 7: Контрпример, или подтверждающий пример",
+    "description": [
+        {"type": "text", "content": "Тута будет текст"},
+        {"type": "math", "content": "$\\sin x$"}
+    ],
+    "themes": [
+        {
+            "id": "1",
+            "title": "Поиск ошибок в рассуждениях",
+            "example": {
+                "task": "",
+                "solution": [
+                ],
+                "answer": ""
+            },
+            "tasks": [
+                {
+                    "task": "",
+                    "hints": [""]
+                }
+            ]
+        }
+    ]
+}

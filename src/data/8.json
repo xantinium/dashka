@@ -1,0 +1,26 @@
+{
+    "id": "8",
+    "title": "Приём 8: Доказательство методом \"от противного\"",
+    "description": [
+        {"type": "text", "content": "Тута будет текст"},
+        {"type": "math", "content": "$\\sin x$"}
+    ],
+    "themes": [
+        {
+            "id": "1",
+            "title": "Поиск ошибок в рассуждениях",
+            "example": {
+                "task": "",
+                "solution": [
+                ],
+                "answer": ""
+            },
+            "tasks": [
+                {
+                    "task": "",
+                    "hints": [""]
+                }
+            ]
+        }
+    ]
+}
