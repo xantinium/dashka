@@ -1,6 +1,10 @@
 {
     "id": "5",
     "title": "Приём 5: Анализ задачи",
+    "description": [
+        {"type": "text", "content": "Тута будет текст"},
+        {"type": "math", "content": "$\\sin x$"}
+    ],
     "themes": [
         {
             "id": "1",

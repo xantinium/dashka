@@ -1,6 +1,10 @@
 {
     "id": "4",
     "title": "Приём 4: Метод малых изменений",
+    "description": [
+        {"type": "text", "content": "Тута будет текст"},
+        {"type": "math", "content": "$\\sin x$"}
+    ],
     "themes": [
         {
             "id": "1",

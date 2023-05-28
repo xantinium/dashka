@@ -1,6 +1,10 @@
 {
     "id": "6",
     "title": "Приём 6: Задачи-софизмы",
+    "description": [
+        {"type": "text", "content": "Тута будет текст"},
+        {"type": "math", "content": "$\\sin x$"}
+    ],
     "themes": [
         {
             "id": "1",
