@@ -2,23 +2,58 @@
     "id": "4",
     "title": "Приём 4: Метод малых изменений",
     "description": [
-        {"type": "text", "content": "Тута будет текст"},
-        {"type": "math", "content": "$\\sin x$"}
+        {"type": "text", "content": "Приём, предполагающий последовательное сведение заданного в условии задачи объекта к требуемому за счет построения цепочки моделей. Каждая из этих моделей получается в результате незначительной, т.е. сохраняющей основные качественные характеристики самого объекта, деформации одного из его компонентов или предыдущей модели. Такими изменениями компонентов условия задачи чаще всего пользуются при упрощении тригонометрических формул."}
     ],
     "themes": [
         {
             "id": "1",
             "title": "Тождественные преобразования тригонометрических выражений",
             "example": {
-                "task": "",
+                "task": "Упростив выражение MATH{$A=\\frac{\\sin 8\\alpha +\\sin 9\\alpha +\\sin 10\\alpha +\\sin 11\\alpha +\\sin 12\\alpha }{\\cos 8\\alpha +\\cos 9\\alpha +\\cos 10\\alpha +\\cos 11\\alpha +\\cos 12\\alpha }$}, найти его значение, если MATH{$tg5\\alpha =\\cos 20{}^\\circ \\cos 40{}^\\circ \\cos 80{}^\\circ .$}",
                 "solution": [
+                    {"type": "text", "content": "Перегруппируем слагаемые в числителе и знаменателе и воспользуемся формулами преобразования суммы в произведение:"},
+                    {"type": "math", "content": "$\\sin x+\\sin y=2\\sin \\frac{x+y}{2}\\cos \\frac{x-y}{2};$"},
+                    {"type": "math", "content": "$\\cos x+\\cos y=2\\cos \\frac{x+y}{2}\\sin \\frac{x-y}{2}.$"},
+                    {"type": "text", "content": "Тогда получим"},
+                    {"type": "math", "content": "$A=\\frac{\\left( \\sin 8\\alpha +\\sin 12\\alpha  \\right)+\\left( \\sin 9\\alpha +\\sin 11\\alpha  \\right)+\\sin 10\\alpha }{\\left( \\cos 8\\alpha +\\cos 12\\alpha  \\right)+\\left( \\cos 9\\alpha +\\cos 11\\alpha  \\right)+\\cos 10\\alpha }=$"},
+                    {"type": "math", "content": "$=\\frac{2\\sin 10\\alpha \\cos 2\\alpha +2\\sin 10\\alpha \\cos \\alpha +\\sin 10\\alpha }{2\\cos 10\\alpha \\cos 2\\alpha +2\\cos 10\\alpha \\cos \\alpha +\\cos 10\\alpha }=$"},
+                    {"type": "math", "content": "$=\\frac{\\sin 10\\alpha \\left( 2\\cos 2\\alpha +2\\cos \\alpha +1 \\right)}{\\cos 10\\alpha \\left( 2\\cos 2\\alpha +2\\cos \\alpha +1 \\right)}=tg10\\alpha =\\frac{2tg5\\alpha }{1-t{{g}^{2}}5\\alpha }$"},
+                    {"type": "text", "content": "(применена формула двойного аргумента: MATH{$tg2x=\\frac{2tgx}{1-t{{g}^{2}}x}$}).Теперь правую часть заданного равенства MATH{$tg5\\alpha =\\cos 20{}^\\circ \\cos 40{}^\\circ \\cos 80{}^\\circ $} умножим и разделим на MATH{$\\sin 20{}^\\circ $}; трижды применив формулу MATH{$\\sin 2x=2\\sin x\\cos x$},находим:"},
+                    {"type": "math", "content": "$tg5\\alpha =\\frac{\\left( \\sin 20{}^\\circ \\cos 20{}^\\circ  \\right)\\cos 40{}^\\circ \\cos 80{}^\\circ }{\\sin 20{}^\\circ }=\\frac{\\left( \\sin 40{}^\\circ \\cos 40{}^\\circ  \\right)\\cos 80{}^\\circ }{2\\sin 20{}^\\circ }=$"},
+                    {"type": "math", "content": "$=\\frac{\\sin 80{}^\\circ \\cos 80{}^\\circ }{4\\sin 20{}^\\circ }=\\frac{\\sin 160{}^\\circ }{8\\sin 20{}^\\circ }=\\frac{\\sin \\left( 180{}^\\circ -20{}^\\circ  \\right)}{8\\sin 20{}^\\circ }=\\frac{\\sin 20{}^\\circ }{8\\operatorname{s}1in20{}^\\circ }=\\frac{1}{8}.$"},
+                    {"type": "text", "content": "Следовательно, MATH{$A=\\frac{2tg5\\alpha }{1-t{{g}^{2}}5\\alpha }=\\frac{2\\cdot \\frac{1}{8}}{1-\\frac{1}{64}}=\\frac{16}{63}.$}"}
                 ],
-                "answer": ""
+                "answer": "$\frac{16}{63}.$"
             },
             "tasks": [
                 {
-                    "task": "",
-                    "hints": [""]
+                    "task": "Упростить выражение MATH{\\[\frac{\\sin \\left( 2\\alpha +2\\pi  \\right)+2\\sin \\left( 4\\alpha -\\pi  \\right)+\\sin \\left( 6\\alpha +4\\pi  \\right)}{\\cos \\left( 6\\pi -2\\alpha  \\right)+2\\cos \\left( 4\\alpha -\\pi  \\right)+\\cos \\left( 6\\alpha -4\\pi  \\right)}.\\]}",
+                    "hints": [
+                        "Воспользуйтесь формулами приведения.",
+                        "Воспользуйтесь формулами преобразования суммы в произведение."
+                    ]
+                },
+                {
+                    "task": "Преобразовать в произведение MATH{$\\frac{\\sin 13\\alpha +\\sin 14\\alpha +\\sin 15\\alpha +\\sin 16\\alpha }{\\cos 13\\alpha +\\cos 14\\alpha +\\cos 15\\alpha +\\cos 16\\alpha }.$}",
+                    "hints": [
+                        "Сгруппируйте слагаемые.",
+                        "Воспользуйтесь формулами преобразования суммы в произведение."
+                    ]
+                },
+                {
+                    "task": "Упростить выражение MATH{$\\left( \\cos 8\\alpha \\cdot tg4\\alpha -\\sin 8\\alpha  \\right)\\left( \\cos 8\\alpha \\cdot ctg4\\alpha +\\sin 8\\alpha  \\right).$}",
+                    "hints": [
+                        "Воспользуйтесь формулой MATH{$tg\\alpha =\\frac{\\sin \\alpha }{\\cos \\alpha }$}.",
+                        "Воспользуйтесь формулами сложения."
+                    ]
+                },
+                {
+                    "task": "Доказать тождество MATH{$\\frac{8{{\\cos }^{4}}\\alpha -4{{\\cos }^{3}}\\alpha -8{{\\cos }^{2}}\\alpha +3\\cos \\alpha +1}{8{{\\cos }^{4}}\\alpha +4{{\\cos }^{3}}\\alpha -8{{\\cos }^{2}}\\alpha -3\\cos \\alpha +1}=-tg\\frac{7\\alpha }{2}tg\\frac{\\alpha }{2}.$}",
+                    "hints": [
+                        "Сгруппируйте слагаемые. ",
+                        "Используйте основное тригонометрическое тождество.",
+                        "Используйте формулу преобразования суммы в произведение."
+                    ]
                 }
             ]
         }
