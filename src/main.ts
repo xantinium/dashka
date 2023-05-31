@@ -6,11 +6,11 @@ import {AppModule} from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
-    httpsOptions: {
-      key: readFileSync('./secrets/private.key'),
-      cert: readFileSync('./secrets/certificate.crt'),
-      ca: readFileSync('./secrets/ca_bundle.crt'),
-    },
+    // httpsOptions: {
+    //   key: readFileSync('./secrets/private.key'),
+    //   cert: readFileSync('./secrets/certificate.crt'),
+    //   ca: readFileSync('./secrets/ca_bundle.crt'),
+    // },
   });
   app.setGlobalPrefix('api', {
     exclude: [
