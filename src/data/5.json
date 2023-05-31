@@ -56,7 +56,7 @@
                 "solution": [
                     {"type": "text", "content": "Имеем MATH{$\\frac{5a+6}{4-a}>1\\Leftrightarrow \\frac{5a+6-4+a}{4-a}>0\\Leftrightarrow \\frac{6a+2}{a-4}<0$}."},
                     {"type": "text", "content": "Изобразим решение данного неравенства на числовой прямой."},
-                    {"type": "img", "content": ""},
+                    {"type": "img", "content": 2},
                     {"type": "text", "content": "Итак, данное неравенство выполняется при MATH{$-\\frac{1}{3}<a<4.$}"}
                 ],
                 "answer": "$\\left( -\\frac{1}{3};4 \\right)$."
