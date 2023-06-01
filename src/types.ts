@@ -9,7 +9,7 @@ type Theme = {
   example: {
     task: string;
     solution: any[];
-    answer: string;
+    answer?: string;
   };
   tasks: Task[];
 };
