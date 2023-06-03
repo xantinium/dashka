@@ -14,7 +14,7 @@ async function bootstrap() {
   });
   app.setGlobalPrefix('api', {
     exclude: [
-      {path: '.well-known/pki-validation/1993448A256C5A60A69172FD32253BC7.txt', method: RequestMethod.GET}
+      {path: '.well-known/pki-validation/669DE2CE8E65081EF3CF07307B58D574.txt', method: RequestMethod.GET}
     ],
   });
   await app.listen(80);
