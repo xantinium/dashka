@@ -69,7 +69,7 @@
                     {"type":"text", "content": "но при которых MATH{$u\\left( x \\right)\\le 0$},не принято считать корнями этого уравнения."},
                     {"type":"text", "content": "Тогда получим уравнение MATH{${{y}^{2}}-\\frac{9}{2}y+2=0$}, корни которого MATH{${{y}_{1}}=4,{{y}_{2}}=0,5$} положительны."},
                     {"type":"text", "content": "Выполним обратную замену и получим совокупность уравнений:"},
-                    {"type": "text", "content": "MATH{$\\left[\\begin{cases}{{2}^{\\sqrt{x}}}=4\\\\{{2}^{\\sqrt{x}}}=0,5\\end{cases}$}, MATH{$\\left[\\begin{cases}{{2}^{\\sqrt{x}}}={{2}^{2}} \\\\{{2}^{\\sqrt{x}}}={{2}^{-1}} \\end{cases}$}, MATH{$\\left[\\begin{cases}\\sqrt{x}=2  \\\\ \\sqrt{x}=1 \\end{cases}$}, MATH{$\\left[\\begin{cases}x=4 \\\\ \\varnothing ,x\\in \\mathbb{R}  \\end{cases}$}."}
+                    {"type": "text", "content": "MATH{$\\begin{bmatrix}{{2}^{\\sqrt{x}}}=4\\\\{{2}^{\\sqrt{x}}}=0,5\\end{bmatrix}$}, MATH{$\\begin{bmatrix}{{2}^{\\sqrt{x}}}={{2}^{2}}\\\\{{2}^{\\sqrt{x}}}={{2}^{-1}}\\end{bmatrix}$}, MATH{$\\begin{bmatrix}\\sqrt{x}=2\\\\\\sqrt{x}=1\\end{bmatrix}$}, MATH{$\\begin{bmatrix}x=4\\\\\\varnothing,x\\in\\mathbb{R}\\end{bmatrix}$}."}
                 ],
                 "answer": "$x=4$."
             },
@@ -206,23 +206,23 @@
             "id": "5",
             "title": "Неравенства",
             "example":{
-                "task": "Решить неравенство MATH{${{\\left( {{x}^{2}}-x \\right)}^{2}}-8\\left( {{x}^{2}}-x \\right)+12<0$}",
+                "task": "Решить неравенство MATH{${{({{x}^{2}}-x)}^{2}}-8({{x}^{2}}-x)+12<0$}",
                 "solution": [
                     {"type": "text", "content": "Сделав замену переменной MATH{$t={{x}^{2}}-x$}, получаем MATH{${{t}^{2}}-8t+12<0.$}"},
-                    {"type": "text", "content": "Корни уравнения MATH{${{t}^{2}}-8t+12=0$} есть MATH{${{t}_{1}}=2,{{t}_{2}}=6$}. Отсюда MATH{${{t}^{2}}-8t+12=\\left( t-2 \\right)\\left( t-6 \\right)<0\\Leftrightarrow 2<t<6.$}"},
+                    {"type": "text", "content": "Корни уравнения MATH{${{t}^{2}}-8t+12=0$} есть MATH{${{t}_{1}}=2,{{t}_{2}}=6$}. Отсюда MATH{${{t}^{2}}-8t+12=(t-2)(t-6)<0\\Leftrightarrow2<t<6.$}"},
                     {"type": "text", "content": "Поскольку MATH{$t={{x}^{2}}-x,$} то получаем "},
-                    {"type": "math", "content": "$2<{{x}^{2}}-x<6\\Leftrightarrow \\left\\\\begin{cases}{{x}^{2}}-x>2,(a),\\\\{{x}^{2}}-x<6,\\left( b \\right). \\end{cases}$"},
+                    {"type": "math", "content": "$2<{{x}^{2}}-x<6\\Leftrightarrow\\begin{cases}{{x}^{2}}-x>2,(a),\\\\{{x}^{2}}-x<6,(b)\\end{cases}$"},
                     {"type": "text", "content": "Решаем неравенство (a):"},
-                    {"type": "math", "content": "${{x}^{2}}-x>2\\Leftrightarrow {{x}^{2}}-x-2>0\\Leftrightarrow \\left( x+1 \\right)\\left( x-2 \\right)>0\\Leftrightarrow \\left[ \\begin{cases}x<-1, \\\\x>2. \\end{cases}$"},
+                    {"type": "math", "content": "${{x}^{2}}-x>2\\Leftrightarrow{{x}^{2}}-x-2>0\\Leftrightarrow(x+1)(x-2)>0\\Leftrightarrow\\begin{bmatrix}x<-1,\\\\x>2.\\end{bmatrix}$"},
                     {"type": "text", "content": "Решаем неравенство (b):"},
-                    {"type": "math", "content": "${{x}^{2}}-x<6\\Leftrightarrow {{x}^{2}}-x-6<0\\Leftrightarrow \\left( x+2 \\right)\\left( x-3 \\right)<0\\Leftrightarrow -2<x<3.$"},
+                    {"type": "math", "content": "${{x}^{2}}-x<6\\Leftrightarrow{{x}^{2}}-x-6<0\\Leftrightarrow(x+2)(x-3)<0\\Leftrightarrow-2<x<3.$"},
                     {"type": "text", "content": "Отсюда"},
-                    {"type": "math", "content": "${{({{x}^{2}}-x)}^{2}}-8\\left( {{x}^{2}}-x \\right)+12<0\\Leftrightarrow \\left\\{ \\begin{cases} {{x}^{2}}-x>2,\\\\{{x}^{2}}-x<6\\end{cases}\\right.\\Leftrightarrow \\left \\begin{cases}\\left[\\begin{cases}x<-1,\\\\x>2, \\end{cases}-2<x<3.\\end{cases}$"},
+                    {"type": "math", "content": "$x(x^2-x)^2-8(x^2-x)+12<0\\Leftrightarrow\\begin{cases}x^2-x>2,\\\\x^2-x<6\\end{cases}\\Leftrightarrow\\begin{cases}\\begin{bmatrix}x<-1,\\\\x>2.\\end{bmatrix}\\\\-2<x<3.\\end{cases}$"},
                     {"type": "text", "content": "Изобразим полученные множества с помощью двух координатных прямых."},
                     {"type": "img", "content": 3},
-                    {"type": "text", "content": "Из рисунка видим, что решением исходного неравенства является объединение множеств MATH{$x\\in \\left( -2;-1 \\right)\\cup \\left( 2;3 \\right).$}"}
+                    {"type": "text", "content": "Из рисунка видим, что решением исходного неравенства является объединение множеств MATH{$x\\in(-2;-1)\\cup( 2;3).$}"}
                 ],
-                "answer": "$x\\in \\left( -2;-1 \\right)\\cup \\left( 2;3 \\right).$"
+                "answer": "$x\\in(-2;-1)\\cup( 2;3).$"
             },
             "tasks":[
                 {
