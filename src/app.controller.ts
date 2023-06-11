@@ -24,9 +24,9 @@ export class AppController {
     return new StreamableFile(file, {type: 'image/png'});
   }
 
-  @Get('.well-known/pki-validation/1993448A256C5A60A69172FD32253BC7.txt')
+  @Get('.well-known/pki-validation/669DE2CE8E65081EF3CF07307B58D574.txt')
   getSSL() {
-    const file = createReadStream(join(process.cwd(), './secrets/1993448A256C5A60A69172FD32253BC7.txt'));
+    const file = createReadStream(join(process.cwd(), './secrets/669DE2CE8E65081EF3CF07307B58D574.txt'));
     return new StreamableFile(file);
   }
 }
